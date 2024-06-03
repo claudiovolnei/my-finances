@@ -1,9 +1,9 @@
-using Fina.Core.Handlers;
-using Fina.Core.Requests.Categories;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
+using MyFinances.Core.Handlers;
+using MyFinances.Core.Requests.Categories;
 
-namespace Fina.Web.Pages.Categories;
+namespace MyFinances.Web.Pages.Categories;
 
 public partial class CreateCategoryPage : ComponentBase
 {

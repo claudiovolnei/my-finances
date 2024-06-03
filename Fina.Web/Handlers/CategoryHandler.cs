@@ -1,15 +1,16 @@
 using System.Net.Http.Json;
-using Fina.Core.Handlers;
-using Fina.Core.Models;
-using Fina.Core.Requests.Categories;
-using Fina.Core.Responses;
+using MyFinances.Core.Handlers;
+using MyFinances.Core.Models;
+using MyFinances.Core.Requests.Categories;
+using MyFinances.Core.Responses;
+using MyFinances.Web;
 
-namespace Fina.Web.Handlers;
+namespace MyFinances.Web.Handlers;
 
 public class CategoryHandler(IHttpClientFactory httpClientFactory) : ICategoryHandler
 {
     private readonly HttpClient _client = httpClientFactory.CreateClient(WebConfiguration.HttpClientName);
-    
+
     public async Task<Response<Category?>> CreateAsync(CreateCategoryRequest request)
     {
         var result = await _client.PostAsJsonAsync("v1/categories", request);

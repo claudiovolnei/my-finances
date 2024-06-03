@@ -1,4 +1,4 @@
-namespace Fina.Web;
+namespace MyFinances.Web;
 
 public static class WebConfiguration
 {

@@ -1,12 +1,13 @@
 using System.ComponentModel.DataAnnotations;
-using Fina.Core.Enums;
+using MyFinances.Core.Enums;
+using MyFinances.Core.Requests;
 
-namespace Fina.Core.Requests.Transactions;
+namespace MyFinances.Core.Requests.Transactions;
 
 public class UpdateTransactionRequest : Request
 {
     public long Id { get; set; }
-    
+
     [Required(ErrorMessage = "Título inválido")]
     public string Title { get; set; } = string.Empty;
 

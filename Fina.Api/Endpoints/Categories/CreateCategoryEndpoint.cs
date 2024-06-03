@@ -1,10 +1,10 @@
-using Fina.Api.Common.Api;
-using Fina.Core.Handlers;
-using Fina.Core.Models;
-using Fina.Core.Requests.Categories;
-using Fina.Core.Responses;
+using MyFinances.Api.Common.Api;
+using MyFinances.Core.Handlers;
+using MyFinances.Core.Models;
+using MyFinances.Core.Requests.Categories;
+using MyFinances.Core.Responses;
 
-namespace Fina.Api.Endpoints.Categories;
+namespace MyFinances.Api.Endpoints.Categories;
 
 public class CreateCategoryEndpoint : IEndpoint
 {

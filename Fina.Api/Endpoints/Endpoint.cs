@@ -1,19 +1,19 @@
-using Fina.Api.Common.Api;
-using Fina.Api.Endpoints.Categories;
-using Fina.Api.Endpoints.Transactions;
+using MyFinances.Api.Common.Api;
+using MyFinances.Api.Endpoints.Categories;
+using MyFinances.Api.Endpoints.Transactions;
 
-namespace Fina.Api.Endpoints;
+namespace MyFinances.Api.Endpoints;
 
 public static class Endpoint
 {
     public static void MapEndpoints(this WebApplication app)
     {
         var endpoints = app.MapGroup("");
-        
+
         endpoints.MapGroup("/")
             .WithTags("Health Check")
             .MapGet("/", () => new { message = "OK" });
-        
+
         endpoints.MapGroup("v1/categories")
             .WithTags("Categories")
             .MapEndpoint<CreateCategoryEndpoint>()
@@ -21,7 +21,7 @@ public static class Endpoint
             .MapEndpoint<DeleteCategoryEndpoint>()
             .MapEndpoint<GetCategoryByIdEndpoint>()
             .MapEndpoint<GetAllCategoriesEndpoint>();
-        
+
         endpoints.MapGroup("v1/transactions")
             .WithTags("Transactions")
             .RequireAuthorization()

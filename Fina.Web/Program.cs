@@ -1,10 +1,10 @@
-using Fina.Core;
-using Fina.Core.Handlers;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Fina.Web;
-using Fina.Web.Handlers;
 using MudBlazor.Services;
+using MyFinances.Core;
+using MyFinances.Core.Handlers;
+using MyFinances.Web;
+using MyFinances.Web.Handlers;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");

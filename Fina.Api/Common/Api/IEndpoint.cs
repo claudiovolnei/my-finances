@@ -1,4 +1,4 @@
-namespace Fina.Api.Common.Api;
+namespace MyFinances.Api.Common.Api;
 
 public interface IEndpoint
 {

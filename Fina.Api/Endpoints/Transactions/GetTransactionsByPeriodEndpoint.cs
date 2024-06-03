@@ -1,13 +1,14 @@
 using System.Security.Claims;
-using Fina.Api.Common.Api;
-using Fina.Core;
-using Fina.Core.Handlers;
-using Fina.Core.Models;
-using Fina.Core.Requests.Transactions;
-using Fina.Core.Responses;
+using MyFinances.Core.Requests.Transactions;
 using Microsoft.AspNetCore.Mvc;
+using MyFinances.Api;
+using MyFinances.Api.Common.Api;
+using MyFinances.Core;
+using MyFinances.Core.Handlers;
+using MyFinances.Core.Models;
+using MyFinances.Core.Responses;
 
-namespace Fina.Api.Endpoints.Transactions;
+namespace MyFinances.Api.Endpoints.Transactions;
 
 public class GetTransactionsByPeriodEndpoint : IEndpoint
 {

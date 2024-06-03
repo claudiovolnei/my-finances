@@ -1,8 +1,8 @@
-using Fina.Core.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using MyFinances.Core.Models;
 
-namespace Fina.Api.Data.Mappings;
+namespace MyFinances.Api.Data.Mappings;
 
 public class CategoryMapping : IEntityTypeConfiguration<Category>
 {

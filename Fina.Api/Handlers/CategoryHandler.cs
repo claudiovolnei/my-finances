@@ -1,11 +1,11 @@
-using Fina.Api.Data;
-using Fina.Core.Handlers;
-using Fina.Core.Models;
-using Fina.Core.Requests.Categories;
-using Fina.Core.Responses;
 using Microsoft.EntityFrameworkCore;
+using MyFinances.Api.Data;
+using MyFinances.Core.Handlers;
+using MyFinances.Core.Models;
+using MyFinances.Core.Requests.Categories;
+using MyFinances.Core.Responses;
 
-namespace Fina.Api.Handlers;
+namespace MyFinances.Api.Handlers;
 
 public class CategoryHandler(AppDbContext context) : ICategoryHandler
 {

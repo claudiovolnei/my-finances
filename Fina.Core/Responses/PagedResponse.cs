@@ -1,6 +1,7 @@
+using MyFinances.Core;
 using System.Text.Json.Serialization;
 
-namespace Fina.Core.Responses;
+namespace MyFinances.Core.Responses;
 
 public class PagedResponse<TData> : Response<TData>
 {
@@ -25,7 +26,7 @@ public class PagedResponse<TData> : Response<TData>
         : base(data, code, message)
     {
     }
-    
+
     public int CurrentPage { get; set; }
     public int TotalPages => (int)Math.Ceiling(TotalCount / (double)PageSize);
     public int PageSize { get; set; } = Configuration.DefaultPageSize;

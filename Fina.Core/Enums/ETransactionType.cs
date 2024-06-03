@@ -1,4 +1,4 @@
-namespace Fina.Core.Enums;
+namespace MyFinances.Core.Enums;
 
 public enum ETransactionType
 {

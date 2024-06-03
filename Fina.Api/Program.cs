@@ -1,7 +1,7 @@
-using Fina.Api;
-using Fina.Api.Common.Api;
-using Fina.Api.Endpoints;
-using Fina.Core;
+using MyFinances.Core;
+using MyFinances.Api;
+using MyFinances.Api.Common.Api;
+using MyFinances.Api.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.AddConfiguration();

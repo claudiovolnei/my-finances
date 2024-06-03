@@ -1,8 +1,8 @@
-using Fina.Core.Models;
-using Fina.Core.Requests.Transactions;
-using Fina.Core.Responses;
+using MyFinances.Core.Models;
+using MyFinances.Core.Requests.Transactions;
+using MyFinances.Core.Responses;
 
-namespace Fina.Core.Handlers;
+namespace MyFinances.Core.Handlers;
 
 public interface ITransactionHandler
 {

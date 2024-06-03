@@ -1,10 +1,10 @@
-using Fina.Core.Handlers;
-using Fina.Core.Models;
-using Fina.Core.Requests.Categories;
+using MyFinances.Core.Requests.Categories;
 using Microsoft.AspNetCore.Components;
 using MudBlazor;
+using MyFinances.Core.Handlers;
+using MyFinances.Core.Models;
 
-namespace Fina.Web.Pages.Categories;
+namespace MyFinances.Web.Pages.Categories;
 
 public partial class GetAllCategoriesPage : ComponentBase
 {

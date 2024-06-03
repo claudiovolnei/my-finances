@@ -1,10 +1,11 @@
-using Fina.Api.Data;
-using Fina.Api.Handlers;
-using Fina.Core;
-using Fina.Core.Handlers;
 using Microsoft.EntityFrameworkCore;
+using MyFinances.Api;
+using MyFinances.Api.Data;
+using MyFinances.Api.Handlers;
+using MyFinances.Core;
+using MyFinances.Core.Handlers;
 
-namespace Fina.Api.Common.Api;
+namespace MyFinances.Api.Common.Api;
 
 public static class BuildExtension
 {
@@ -14,7 +15,7 @@ public static class BuildExtension
         Configuration.BackendUrl = builder.Configuration.GetValue<string>("BackendUrl") ?? string.Empty;
         Configuration.FrontendUrl = builder.Configuration.GetValue<string>("FrontendUrl") ?? string.Empty;
     }
-    
+
     public static void AddDocumentation(this WebApplicationBuilder builder)
     {
         builder.Services.AddEndpointsApiExplorer();
@@ -23,7 +24,7 @@ public static class BuildExtension
             x.CustomSchemaIds(n => n.FullName);
         });
     }
-    
+
     public static void AddDataContexts(this WebApplicationBuilder builder)
     {
         builder
@@ -33,9 +34,9 @@ public static class BuildExtension
                 {
                     x.UseSqlServer(ApiConfiguration.ConnectionString);
                 });
-        
+
     }
-    
+
     public static void AddCrossOrigin(this WebApplicationBuilder builder)
     {
         builder.Services.AddCors(
@@ -51,7 +52,7 @@ public static class BuildExtension
                     .AllowCredentials()
             ));
     }
-    
+
     public static void AddServices(this WebApplicationBuilder builder)
     {
         builder

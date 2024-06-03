@@ -1,8 +1,8 @@
-using Fina.Core.Models;
-using Fina.Core.Requests.Categories;
-using Fina.Core.Responses;
+using MyFinances.Core.Models;
+using MyFinances.Core.Requests.Categories;
+using MyFinances.Core.Responses;
 
-namespace Fina.Core.Handlers;
+namespace MyFinances.Core.Handlers;
 
 public interface ICategoryHandler
 {

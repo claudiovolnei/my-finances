@@ -1,11 +1,12 @@
 using System.Security.Claims;
-using Fina.Api.Common.Api;
-using Fina.Core.Handlers;
-using Fina.Core.Models;
-using Fina.Core.Requests.Transactions;
-using Fina.Core.Responses;
+using MyFinances.Api;
+using MyFinances.Api.Common.Api;
+using MyFinances.Core.Handlers;
+using MyFinances.Core.Models;
+using MyFinances.Core.Requests.Transactions;
+using MyFinances.Core.Responses;
 
-namespace Fina.Api.Endpoints.Transactions;
+namespace MyFinances.Api.Endpoints.Transactions;
 
 public class UpdateTransactionEndpoint : IEndpoint
 {

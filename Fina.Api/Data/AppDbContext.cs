@@ -1,9 +1,9 @@
 using System.Reflection;
-using Fina.Api.Data.Mappings;
-using Fina.Core.Models;
+using MyFinances.Api.Data.Mappings;
 using Microsoft.EntityFrameworkCore;
+using MyFinances.Core.Models;
 
-namespace Fina.Api.Data;
+namespace MyFinances.Api.Data;
 
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {

@@ -1,13 +1,13 @@
 using System.Security.Claims;
-using Fina.Api.Common.Api;
-using Fina.Core;
-using Fina.Core.Handlers;
-using Fina.Core.Models;
-using Fina.Core.Requests.Categories;
-using Fina.Core.Responses;
+using MyFinances.Core.Requests.Categories;
 using Microsoft.AspNetCore.Mvc;
+using MyFinances.Api.Common.Api;
+using MyFinances.Core;
+using MyFinances.Core.Handlers;
+using MyFinances.Core.Models;
+using MyFinances.Core.Responses;
 
-namespace Fina.Api.Endpoints.Categories;
+namespace MyFinances.Api.Endpoints.Categories;
 
 public class GetAllCategoriesEndpoint : IEndpoint
 {
@@ -18,7 +18,7 @@ public class GetAllCategoriesEndpoint : IEndpoint
             .WithDescription("Recupera todas as categorias")
             .WithOrder(5)
             .Produces<PagedResponse<List<Category>?>>();
-    
+
     private static async Task<IResult> HandleAsync(
         ICategoryHandler handler,
         [FromQuery] int pageNumber = Configuration.DefaultPageNumber,

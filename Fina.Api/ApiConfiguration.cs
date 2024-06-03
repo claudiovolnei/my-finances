@@ -1,4 +1,4 @@
-namespace Fina.Api;
+namespace MyFinances.Api;
 
 public static class ApiConfiguration
 {

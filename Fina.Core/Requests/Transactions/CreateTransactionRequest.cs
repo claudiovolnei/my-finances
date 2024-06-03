@@ -1,7 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using Fina.Core.Enums;
+using MyFinances.Core.Enums;
+using MyFinances.Core.Requests;
 
-namespace Fina.Core.Requests.Transactions;
+namespace MyFinances.Core.Requests.Transactions;
 
 public class CreateTransactionRequest : Request
 {

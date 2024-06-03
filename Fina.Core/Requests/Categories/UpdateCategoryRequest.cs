@@ -1,6 +1,7 @@
+using MyFinances.Core.Requests;
 using System.ComponentModel.DataAnnotations;
 
-namespace Fina.Core.Requests.Categories;
+namespace MyFinances.Core.Requests.Categories;
 
 public class UpdateCategoryRequest : Request
 {

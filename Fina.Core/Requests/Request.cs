@@ -1,4 +1,4 @@
-namespace Fina.Core.Requests;
+namespace MyFinances.Core.Requests;
 
 public abstract class Request
 {

@@ -1,4 +1,4 @@
-namespace Fina.Core.Models;
+namespace MyFinances.Core.Models;
 
 public class Category
 {

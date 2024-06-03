@@ -1,20 +1,21 @@
-using Fina.Api.Data;
-using Fina.Core.Common;
-using Fina.Core.Handlers;
-using Fina.Core.Models;
-using Fina.Core.Requests.Transactions;
-using Fina.Core.Responses;
 using Microsoft.EntityFrameworkCore;
+using MyFinances.Api.Data;
+using MyFinances.Core.Common;
+using MyFinances.Core.Enums;
+using MyFinances.Core.Handlers;
+using MyFinances.Core.Models;
+using MyFinances.Core.Requests.Transactions;
+using MyFinances.Core.Responses;
 
-namespace Fina.Api.Handlers;
+namespace MyFinances.Api.Handlers;
 
 public class TransactionHandler(AppDbContext context) : ITransactionHandler
 {
     public async Task<Response<Transaction?>> CreateAsync(CreateTransactionRequest request)
     {
-        if (request is { Type: Fina.Core.Enums.ETransactionType.Withdraw, Amount: >= 0 }) 
+        if (request is { Type: ETransactionType.Withdraw, Amount: >= 0 })
             request.Amount *= -1;
-        
+
         try
         {
             var transaction = new Transaction
@@ -41,9 +42,9 @@ public class TransactionHandler(AppDbContext context) : ITransactionHandler
 
     public async Task<Response<Transaction?>> UpdateAsync(UpdateTransactionRequest request)
     {
-        if (request is { Type: Fina.Core.Enums.ETransactionType.Withdraw, Amount: >= 0 }) 
+        if (request is { Type: ETransactionType.Withdraw, Amount: >= 0 })
             request.Amount *= -1;
-        
+
         try
         {
             var transaction = await context
@@ -122,7 +123,7 @@ public class TransactionHandler(AppDbContext context) : ITransactionHandler
             return new PagedResponse<List<Transaction>?>(null, 500,
                 "Não foi possível determinar a data de início ou término");
         }
-        
+
         try
         {
             var query = context

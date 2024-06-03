@@ -1,6 +1,7 @@
+using MyFinances.Core;
 using System.Text.Json.Serialization;
 
-namespace Fina.Core.Responses;
+namespace MyFinances.Core.Responses;
 
 public class Response<TData>
 {
@@ -9,7 +10,7 @@ public class Response<TData>
     [JsonConstructor]
     public Response()
         => _code = Configuration.DefaultStatusCode;
-    
+
     public Response(
         TData? data,
         int code = Configuration.DefaultStatusCode,

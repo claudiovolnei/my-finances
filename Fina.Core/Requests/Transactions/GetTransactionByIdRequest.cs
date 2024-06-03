@@ -1,4 +1,6 @@
-namespace Fina.Core.Requests.Transactions;
+using MyFinances.Core.Requests;
+
+namespace MyFinances.Core.Requests.Transactions;
 
 public class GetTransactionByIdRequest : Request
 {

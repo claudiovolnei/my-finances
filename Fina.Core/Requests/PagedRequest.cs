@@ -1,4 +1,6 @@
-namespace Fina.Core.Requests;
+using MyFinances.Core;
+
+namespace MyFinances.Core.Requests;
 
 public abstract class PagedRequest : Request
 {
