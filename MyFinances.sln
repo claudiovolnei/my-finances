@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFinances.Api", "Fina.Api\MyFinances.Api.csproj", "{DE91FD71-6E7F-45AF-B222-844E66D2E49C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFinances.Api", "MyFinances.Api\MyFinances.Api.csproj", "{DE91FD71-6E7F-45AF-B222-844E66D2E49C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFinances.Core", "Fina.Core\MyFinances.Core.csproj", "{E14259F7-30AE-4248-83F8-A34BB6933839}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFinances.Core", "MyFinances.Core\MyFinances.Core.csproj", "{E14259F7-30AE-4248-83F8-A34BB6933839}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFinances.Web", "Fina.Web\MyFinances.Web.csproj", "{70FFEC08-81B5-44FD-9E59-304092084756}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFinances.Web", "MyFinances.Web\MyFinances.Web.csproj", "{70FFEC08-81B5-44FD-9E59-304092084756}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
